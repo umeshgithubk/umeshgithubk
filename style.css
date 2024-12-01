@@ -1,0 +1,151 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f5f5f5;
+  }
+  
+  /* Header */
+  header {
+    background-color: #00cc41;
+    color: white;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+  }
+  
+  header .logo h1 {
+    font-size: 30px;
+  }
+  
+  header nav ul {
+    display: flex;
+    list-style: none;
+  }
+  
+  header nav ul li {
+    margin-right: 20px;
+  }
+  
+  header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  
+  header nav ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Main Content */
+  main {
+    padding: 20px;
+  }
+  
+  h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+  
+  .live-scores, .upcoming-matches {
+    background-color: white;
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    
+  }
+  .squad{
+      flex: 1; 
+      text-align: left;
+       margin-right: 20px;
+  }
+  
+  .match {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+  .team-info {
+    text-align: center;
+  }
+  
+  .team-info h3 {
+    font-size: 20px;
+    margin-bottom: 5px;
+  }
+  
+  .team-info p {
+    font-size: 16px;
+  }
+  
+  .vs {
+    font-size: 20px;
+    font-weight: bold;
+    color: #3612ba;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    text-align: center;
+  }
+  
+  footer p {
+    margin-bottom: 10px;
+  }
+  
+  footer .social-media {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+  }
+  
+  footer .social-media li {
+    margin-right: 15px;
+  }
+  
+  footer .social-media li a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  footer .social-media li a:hover {
+    text-decoration: underline;
+  }
+  @media (max-width: 768px) {
+    header {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    header nav ul {
+      flex-direction: column;
+      margin-top: 10px;
+    }
+  
+    .match {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .match .team-info {
+      margin-bottom: 10px;
+    }
+  }
+  
+  h1{
+    justify-content: start;
+  }
